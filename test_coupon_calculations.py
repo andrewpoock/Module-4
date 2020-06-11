@@ -27,13 +27,7 @@ class FunctionTestCase(unittest.TestCase):
         self.assertAlmostEqual(coupon_calculations.calculate_price(45, 10, 15), 47, 0)
         self.assertAlmostEqual(coupon_calculations.calculate_price(45, 10, 20), 47, 0)
 
-    def test_price_above_fifty(self):
-        self.assertAlmostEqual(coupon_calculations.calculate_price(60, 5, 10), 64, 0)
-        self.assertAlmostEqual(coupon_calculations.calculate_price(60, 5, 15), 54, 0)
-        self.assertAlmostEqual(coupon_calculations.calculate_price(60, 5, 20), 55, 0)
-        self.assertAlmostEqual(coupon_calculations.calculate_price(60, 10, 10), 60, 0)
-        self.assertAlmostEqual(coupon_calculations.calculate_price(60, 10, 15), 61, 0)
-        self.assertAlmostEqual(coupon_calculations.calculate_price(60, 10, 20), 62, 0)
+    
 
 
 if __name__ == '__main__':
